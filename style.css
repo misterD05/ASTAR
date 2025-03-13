@@ -10,7 +10,7 @@ body{
 }
 
 
-.environment{
+#environment{
     height: 100%;
     width: auto;
     border:2px solid black;

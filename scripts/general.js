@@ -1,6 +1,6 @@
 const env = new Enviroment(100,100);
 console.log("ciao")
-let enviroment = document.getElementsByClassName("environment");
+let enviroment = document.getElementsById("environment");
 enviroment.style.display = "grid";
 let box = document.createElement('div');
 box.setAttribute('class', 'box');
