@@ -1,7 +1,8 @@
 const env = new Enviroment(100,100);
 
 let enviroment = document.getElementsByClassName("environment");
-let box = "<div class='box'></div>";
+let box = document.createElement('div');
+box.setAttribute('class', 'box');
 box.style.border = "solid 2px black";
 
 for (let index = 0; index < env.heigth; index++) {
