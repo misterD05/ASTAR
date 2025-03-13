@@ -15,4 +15,11 @@ body{
     width: auto;
     border:2px solid black;
     border-radius: 10px;
+    display: grid;
+}
+
+
+.box{
+    border: solid 2px black;
+    
 }
