@@ -1,21 +1,11 @@
 const env = new Enviroment(100,100);
 
-var canva = document.getElementById("enviroment");
-var context = canva.getContext("2d");
+let enviroment = document.getElementsByClassName("environment");
+let box = "<div class='box'></div>";
+box.style.border = "solid 2px black";
 
-
-function drawEnv(width, heigth, widtCell, heigthCell){
-    
-    context.lineWidth = 1;
-    for (let x = 0; x < width; x += 10) {
-        for (let y = 0; y < heigth; y += 10) {
-            context.strokeRect(x,y,30,30);
-        }
-    }
+for (let index = 0; index < env.heigth; index++) {
+    box.style.heigth = "" + enviroment.heigth/env.heigth + "px";
+    box.style.width = "auto";
+    enviroment.appendChild(box);
 }
-
-
-console.log(env.width);
-
-drawEnv( env.width, env.heigth, window.width/env.width, window.height/env.height);
-
