@@ -6,7 +6,7 @@ box.setAttribute('class', 'box');
 box.style.border = "solid 2px black";
 console.log("ciao")
 
-for (let index = 0; index < env.heigth; index++) {
+for (let index = 0; index < env.height; index++) {
     
     box.style.width = "auto";
     enviroment.appendChild(box);
