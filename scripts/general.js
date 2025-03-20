@@ -11,7 +11,7 @@ for (let index = 0; index < env.heigth * env.width ; index++) {
     let box = document.createElement('div');
     box.setAttribute('class', 'box');
     box.style.background = "#F8FFE5"
-    box.style.border = "solid 2px black";
+    box.style.border = "solid 1px black";
     console.log(index);
     box.style.width = "auto";
     enviroment.appendChild(box);
