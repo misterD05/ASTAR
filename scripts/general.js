@@ -4,13 +4,13 @@ enviroment.style.display = "grid";
 let box = document.createElement('div');
 box.setAttribute('class', 'box');
 box.style.border = "solid 2px black";
-console.log("ciao")
+console.log(env.heigth)
 
-for (let index = 0; index < env.height; index++) {
+for (let index = 0; index < env.heigth ; index++) {
     
+    console.log(index);
     box.style.width = "auto";
     enviroment.appendChild(box);
-    console.log(index);
 }
 
 
