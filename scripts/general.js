@@ -18,4 +18,4 @@ for (let index = 0; index < env.heigth * env.width ; index++) {
 }
 
 
-document.getElementsByClassName("box");
+console.log(document.getElementsByClassName("box")[0].offsetHeigth());
