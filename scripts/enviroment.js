@@ -22,7 +22,4 @@ class Enviroment{
         return false;
     }
 
-    getHeigth(){
-        return this.heigth;
-    }
 }
