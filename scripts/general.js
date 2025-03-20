@@ -8,10 +8,8 @@ enviroment.style.display = "grid";
 let box = document.createElement('div');
 box.setAttribute('class', 'box');
 box.style.border = "solid 2px black";
-console.log(String(env.heigth))
-console.log(parseInt(env.heigth))
-console.log(x)
-console.log(y)
+console.log(String(env.heigth));
+console.log(parseInt(env.heigth));
 
 for (let index = 0; index < env.heigth ; index++) {
     

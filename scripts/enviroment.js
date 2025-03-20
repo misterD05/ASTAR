@@ -1,9 +1,9 @@
 class Enviroment{
     obstacles = [];
 
-    cosntructor(width, heigth){
-        this._width = width;
-        this._heigth = heigth;
+    constructor(width, heigth){
+        this.width = width;
+        this.heigth = heigth;
     }
 
 
@@ -21,5 +21,6 @@ class Enviroment{
 
         return false;
     }
+
 
 }

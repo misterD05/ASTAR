@@ -1,11 +1,11 @@
 class State{
 
     constructor(x, y, g, h, previous){
-        this._x = x;
-        this._y = y;
-        this._g = g;
-        this._h = h;
-        this._previous = previous;
+        this.x = x;
+        this.y = y;
+        this.g = g;
+        this.h = h;
+        this.previous = previous;
     }
 
 

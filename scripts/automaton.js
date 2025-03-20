@@ -3,10 +3,10 @@ class Automaton{
     expanded = [];
 
     constructor(x,y,env, goal){
-        this._x = x;
-        this._y = y;
-        this._env = env;
-        this._goal = goal;
+        this.x = x;
+        this.y = y;
+        this.env = env;
+        this.goal = goal;
     }
 
 
