@@ -5,6 +5,7 @@ let y = 100;
 const env = new Enviroment(parseInt(x),parseInt(y));
 let enviroment = document.getElementById('environment')
 enviroment.style.display = "grid";
+enviroment.style.gridTemplateColumns =  "auto auto auto";
 
 for (let index = 0; index < env.heigth ; index++) {
     let box = document.createElement('div');
