@@ -10,6 +10,8 @@ box.setAttribute('class', 'box');
 box.style.border = "solid 2px black";
 console.log(String(env.heigth))
 console.log(parseInt(env.heigth))
+console.log(x)
+console.log(y)
 
 for (let index = 0; index < env.heigth ; index++) {
     
