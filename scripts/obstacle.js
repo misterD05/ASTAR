@@ -8,6 +8,6 @@ class Obstacle{
 
 
     isUnder(x,y){
-        return (x >= x1 && x <= x2) && (y >= y1 && y <= y2);
+        return (x >= this.x1 && x <= this.x2) && (y >= this.y1 && y <= this.y2);
     }
 }
