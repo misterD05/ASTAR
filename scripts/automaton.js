@@ -1,26 +1,22 @@
 class Automaton{
+
     expandable = [];
     expanded = [];
-
-    colorNew = "red";
+    colorNew = "red"; 
     colorOld = "yellow";
-    
 
-    constructor(x,y,env, goalx, goaly){
-        this.x = x;
-        this.y = y;
+    constructor(x, y, env, goalX, goalY){
+        this.initalX = x;
+        this.initialY = y;
         this.env = env;
-        this.goalx = goalx;
-        this.goaly = goaly;
+        this.goalX = goalX;
+        this.goalY = goalY;
     }
 
-
-    getSuccesor(state){
-        let succesors = [];
+    getSuccessors(state){
+        let successors = [];
         let x = state.x;
         let y = state.y;
-
-
         x++;
         if(x < this.env.width){
             if(!this.env.underObstacle(x, y)){
@@ -52,8 +48,6 @@ class Automaton{
         return successors;
     }
 
-
-    
     removeExpandedSuccessors(successors){
         for (let i = 0; i < this.expanded.length; i++){
             for (let j = 0; j < successors.length; j++){
@@ -79,9 +73,6 @@ class Automaton{
         }
     }
 
-
-
-    
     getPosLowestF(){
         let minF = 1000000;
         let posMinF;
@@ -94,8 +85,6 @@ class Automaton{
         return posMinF;
     }
 
-
-    
     aStar(){
         this.expandable.push(new State(this.initalX, this.initialY, 0, this.heuristic(this.initalX, this.initialY), null));
         do{
@@ -120,7 +109,8 @@ class Automaton{
     }
 
     heuristic(stateX, stateY){
-        return Math.abs(stateX - this.goalx) + Math.abs(stateY - this.goaly);
+        return Math.abs(stateX - this.goalX) + 
+        Math.abs(stateY - this.goalY);
     }
 
 
