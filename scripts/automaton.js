@@ -89,7 +89,7 @@ class Automaton{
         this.expandable.push(new State(this.initalX, this.initialY, 0, this.heuristic(this.initalX, this.initialY), null));
         do{
             let posMinF = this.getPosLowestF();
-            console.log("heuristics: " + this.expandable[posMinF].h);
+            console.log("heuristics: " + this.expandable[posMinF]);
             if(this.expandable[posMinF].h == 0){
                 let path = [];
                 let state = this.expandable[posMinF];
