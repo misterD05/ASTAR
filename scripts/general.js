@@ -18,6 +18,6 @@ for (let index = 0; index < env.heigth * env.width ; index++) {
 }
 
 const bot = new Automaton(0,0,env, new State(25,25,1,0,null));
-
+const arrGrid = document.getElementsByClassName('box');
 
 console.log(document.getElementsByClassName("box")[0].offsetHeigth());
