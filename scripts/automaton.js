@@ -75,7 +75,7 @@ class Automaton{
 
     getPosLowestF(){
         let minF = 1000000;
-        let posMinF;
+        let posMinF = 0;
         for(let i = 0; i < this.expandable.length; i++){
             if(this.expandable[i].f() < minF){
                 minF = this.expandable[i].f();
