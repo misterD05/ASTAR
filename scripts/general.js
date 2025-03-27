@@ -4,11 +4,11 @@ let y = 10;
 
 const env = new Enviroment(parseInt(x),parseInt(y));
 let enviroment = document.getElementById('environment')
-let obstacle = new Obstacle(1,1,10,10);
-let obstacle2 = new Obstacle(12,12,24,12);
+let obstacle = new Obstacle(1,1,7,7);
+//let obstacle2 = new Obstacle(,,24,12);
 
 env.addObstacle(obstacle);
-env.addObstacle(obstacle2);
+//env.addObstacle(obstacle2);
 enviroment.style.display = "grid";
 enviroment.style.gridTemplateColumns =  "auto auto auto auto auto auto auto auto auto auto";// auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto ";
 
@@ -29,8 +29,10 @@ let p = null;
 
 
 for(let o of env.obstacles){
-    for (let i = 0; i < (o.x2 - o.x1) * (o.y2 - o.y1); i++) {
-        arrGrid[o.x1*10 + o.y1].style.background = "black";        
+    for (let i = 0; i < (o.x2 - o.x1); i++) {
+        for (let j = 0; j < (o.y2 - o.y1);j ++) {
+            arrGrid[i*10 + j].style.background = "black";
+        }        
     }
 }
 
