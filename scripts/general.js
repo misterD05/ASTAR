@@ -28,6 +28,12 @@ const path = bot.aStar();
 let p = null;
 
 
+for(let o of env.obstacles){
+    for (let i = 0; i < (o.x2 - o.x1) * (o.y2 - o.y1); i++) {
+        arrGrid[o.x1*10 + o.y1].style.background = "black";        
+    }
+}
+
 for(let s of path){
     setTimeout(500, function (s){
         if(!p == null){
