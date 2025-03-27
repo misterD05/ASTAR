@@ -2,7 +2,8 @@ class Automaton{
     expandable = [];
     expanded = [];
 
-    div = document.createElement('div')
+    div = document.createElement('div');
+    
 
     constructor(x,y,env, goal){
         this.x = x;
@@ -118,6 +119,18 @@ class Automaton{
 
     heuristic(stateX, stateY){
         return Math.abs(stateX - this.goal.x) + Math.abs(stateY - this.goal.y);
+    }
+
+
+    generateDiv(length, width){
+        this.div.setAttribute('class', 'bot');
+        this.div.style.position = "absolute";
+        this.div.style.margin = "10px";
+        this.div.style.width = width + "px";
+        this.div.style.length = length + "px";
+        this.div.style.background = "green";
+        this.div.style.top = "0px";
+        this.div.style.left = "0px";
     }
 
 }

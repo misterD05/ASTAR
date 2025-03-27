@@ -5,7 +5,7 @@ let y = 25;
 const env = new Enviroment(parseInt(x),parseInt(y));
 let enviroment = document.getElementById('environment')
 enviroment.style.display = "grid";
-enviroment.style.gridTemplateColumns =  "auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto ";
+enviroment.style.gridTemplateColumns =  "auto auto auto auto auto";// auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto ";
 
 for (let index = 0; index < env.heigth * env.width ; index++) {
     let box = document.createElement('div');
