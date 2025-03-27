@@ -6,11 +6,12 @@ class Automaton{
     colorOld = "yellow";
     
 
-    constructor(x,y,env, goal){
+    constructor(x,y,env, goalx, goaly){
         this.x = x;
         this.y = y;
         this.env = env;
-        this.goal = goal;
+        this.goalx = goalx;
+        this.goaly = goaly;
     }
 
 
@@ -119,7 +120,7 @@ class Automaton{
     }
 
     heuristic(stateX, stateY){
-        return Math.abs(stateX - this.goal.x) + Math.abs(stateY - this.goal.y);
+        return Math.abs(stateX - this.goalx) + Math.abs(stateY - this.goaly);
     }
 
 
