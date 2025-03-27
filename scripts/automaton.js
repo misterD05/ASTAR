@@ -2,6 +2,8 @@ class Automaton{
     expandable = [];
     expanded = [];
 
+    div = document.createElement('div')
+
     constructor(x,y,env, goal){
         this.x = x;
         this.y = y;

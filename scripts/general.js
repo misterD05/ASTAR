@@ -1,5 +1,5 @@
-let x = 100;
-let y = 100;
+let x = 25;
+let y = 25;
 
 
 const env = new Enviroment(parseInt(x),parseInt(y));
@@ -16,6 +16,8 @@ for (let index = 0; index < env.heigth * env.width ; index++) {
     box.style.width = "auto";
     enviroment.appendChild(box);
 }
+
+const bot = new Automaton(0,0,env, new State(25,25,1,0,null));
 
 
 console.log(document.getElementsByClassName("box")[0].offsetHeigth());
