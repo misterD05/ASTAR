@@ -4,7 +4,11 @@ let y = 10;
 
 const env = new Enviroment(parseInt(x),parseInt(y));
 let enviroment = document.getElementById('environment')
-let obstacle = new obstacle
+let obstacle = new Ostacle(1,1,10,10);
+let obstacle2 = new Ostacle(12,12,24,12);
+
+env.addObstacle(obstacle);
+env.addObstacle(obstacle2);
 enviroment.style.display = "grid";
 enviroment.style.gridTemplateColumns =  "auto auto auto auto auto auto auto auto auto auto";// auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto ";
 
