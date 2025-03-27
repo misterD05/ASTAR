@@ -40,4 +40,4 @@ for(let s of path){
 }
 
 
-console.log(document.getElementsByClassName("box")[0].offsetHeigth());
+console.log(document.getElementsByClassName("box")[0].offsetHeigth);
